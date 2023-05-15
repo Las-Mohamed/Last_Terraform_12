@@ -1,1 +1,4 @@
-# Lastab_Brief12_terraform
+# Création d'une infra avec terraform
+
+- 2 VM's
+- LoadBalancer
