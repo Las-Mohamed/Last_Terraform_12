@@ -1,3 +1,4 @@
+#### Le provider est indispensable pour terraform, ici "azurerm"
  terraform {
 
    required_version = ">=0.12"

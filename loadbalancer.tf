@@ -1,7 +1,8 @@
+#### Création du LoadBalancer et de la backendpool contenant nos VM's
  resource "azurerm_lb" "test" {
    name                = "LoadBalancer"
-   location            = azurerm_resource_group.imported_rg.location
-   resource_group_name = azurerm_resource_group.imported_rg.name
+   location            = data.azurerm_resource_group.Last_Brief12_terraform.location
+   resource_group_name = data.azurerm_resource_group.Last_Brief12_terraform.name
 
    frontend_ip_configuration {
      name                 = "publicIPAddress"
